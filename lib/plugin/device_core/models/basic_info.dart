@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:ble_plugin_test_example/plugin/device_core/models/enum/device_operation_mode.dart';
-import 'package:ble_plugin_test_example/plugin/device_core/models/enum/temp_control_mode_state.dart';
+
+import 'package:ble_plugin_test/plugin/device_core/models/enum/device_operation_mode.dart';
+import 'package:ble_plugin_test/plugin/device_core/models/enum/temp_control_mode_state.dart';
 
 class BasicInfo {
   final bool isTempSensorAttached;

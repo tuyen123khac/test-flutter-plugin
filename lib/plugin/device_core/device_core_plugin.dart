@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:ble_plugin_test_example/plugin/device_core/models/schedule.dart';
+
+import 'package:ble_plugin_test/plugin/device_core/models/schedule.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';

@@ -1,6 +1,6 @@
-import 'package:ble_plugin_test_example/plugin/device_core/models/basic_info.dart';
-import 'package:ble_plugin_test_example/plugin/device_core/models/hot_box_data.dart';
-import 'package:ble_plugin_test_example/plugin/device_core/models/schedule.dart';
+import 'package:ble_plugin_test/plugin/device_core/models/basic_info.dart';
+import 'package:ble_plugin_test/plugin/device_core/models/hot_box_data.dart';
+import 'package:ble_plugin_test/plugin/device_core/models/schedule.dart';
 
 import 'enum/event_enum.dart';
 import 'models/battery_info.dart';
