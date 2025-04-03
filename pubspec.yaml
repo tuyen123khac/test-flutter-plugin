@@ -17,7 +17,7 @@ dependencies:
   permission_handler: 11.3.1
   location: 7.0.1
   app_settings: 5.1.1
-  
+
   # Logger 
   logger: 2.4.0
 
@@ -45,9 +45,9 @@ flutter:
     platforms:
       android:
         package: com.example.ble_plugin_test
-        pluginClass: BlePluginTestPlugin
+        pluginClass: BlePluginManager
       ios:
-        pluginClass: BlePluginTestPlugin
+        pluginClass: BlePluginManager
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
