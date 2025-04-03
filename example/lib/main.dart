@@ -3,10 +3,9 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:ble_plugin_test/ble_plugin_test.dart';
-import 'package:ble_plugin_test/ble_plugin_manager.dart';
 
 void main() {
-  BlePluginManager.subscribePluginEvents();
+  BlePluginTest.subscribePluginEvents();
   runApp(const MyApp());
 }
 
@@ -31,7 +30,7 @@ class _MyAppState extends State<MyApp> {
     initPlatformState();
     listenEvent();
     await Future.delayed(const Duration(seconds: 2));
-    BlePluginManager.checkPermission();
+    BlePluginTest.checkPermission();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -57,7 +56,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   void listenEvent() {
-    BlePluginManager.listenFoundDevice(
+    BlePluginTest.listenFoundDevice(
       (p0) {
         print(' Found devoce : ${p0}');
       },
@@ -78,7 +77,7 @@ class _MyAppState extends State<MyApp> {
             FloatingActionButton(
               child: Icon(Icons.stop),
               onPressed: () {
-                BlePluginManager.stopScan();
+                BlePluginTest.stopScan();
               },
               heroTag: null,
             ),
@@ -88,7 +87,7 @@ class _MyAppState extends State<MyApp> {
             FloatingActionButton(
               child: Icon(Icons.star),
               onPressed: () {
-                BlePluginManager.startScan();
+                BlePluginTest.startScan();
               },
               heroTag: null,
             )
